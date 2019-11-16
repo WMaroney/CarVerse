@@ -58,3 +58,25 @@ CREATE TABLE warranty_table(
 	Warranty_miles varchar(30) not null,
 	primary key (Warranty_ID)
 	);
+
+CREATE TABLE main_car_table(
+	Make_ID int(2) not null,
+	Model_Name varchar(20) not null,
+	Engine_Type_ID int(2) not null,
+	Trim_type varchar (20) not null,
+	Body_type_ID int(2) not null,
+	Class_ID int(2) not null,
+	Drivetrain_ID int(2) not null,
+	MPG_range_ID int(2) not null,
+	MSRP_ID int(2) not null,
+	Warranty_ID int(2),
+	primary key (Model_Name, Trim_type),
+	foreign key (Make_ID) references make_table(Make_ID),
+	foreign key (Engine_Type_ID) references engine_type(Engine_Type_ID),
+	foreign key (Body_type_ID) references body_table(Body_type_ID),
+	foreign key (Class_ID) references class_type(Class_ID),
+	foreign key (Drivetrain_ID) references drivetrain_table(Drivetrain_ID),
+	foreign key (MPG_range_ID) references mpg_table(MPG_range_ID),
+	foreign key (MSRP_ID) references msrp_table(MSRP_ID),
+	foreign key (Warranty_ID) references warranty_table(Warranty_ID)
+	);
