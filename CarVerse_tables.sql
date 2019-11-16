@@ -53,8 +53,8 @@ CREATE TABLE body_table(
 
 CREATE TABLE warranty_table(
 	Warranty_ID int(2) not null,
-	Warranty_type varchar(30),
-	Warranty_months int(2),
+	Warranty_type varchar(30) not null,
+	Warranty_months int(2) not null,
 	Warranty_miles varchar(30) not null,
 	primary key (Warranty_ID)
 	);
