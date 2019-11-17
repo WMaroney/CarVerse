@@ -73,7 +73,7 @@ INSERT INTO msrp_table (MSRP_ID, MSRP_range) VALUES (02, '$20,000 - $30,000');
 INSERT INTO msrp_table (MSRP_ID, MSRP_range) VALUES (03, '$30,000 - $40,000');
 INSERT INTO msrp_table (MSRP_ID, MSRP_range) VALUES (04, '$40,000 - $50,000');
 INSERT INTO msrp_table (MSRP_ID, MSRP_range) VALUES (05, '$50,000 - $60,000');
-INSERT INTO msrp_table (MSRP_ID, MSRP_range) VALUES (06, '>$20,000');
+INSERT INTO msrp_table (MSRP_ID, MSRP_range) VALUES (06, '>$60,000');
 
 /*The following lines add to the MPG Table*/
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (01, '<15 MPG');
@@ -83,4 +83,13 @@ INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (04, '25 - 30 MPG');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (05, '30 - 35 MPG');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (06, '35 - 40 MPG');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (07, '>40 MPG');
+
+/*The following lines add to the Warranty Table*/
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (01, 'Powertrain', 36, '30,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (02, 'Bumber-to_bumper', 36, '30,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (03, 'Powertrain', 60, '60,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (04, 'Bumber-to_bumper', 60, '60,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (05, 'Powertrain', 90, '100,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (06, 'Bumber-to_bumper', 90, '100,000 Miles');
+
 
