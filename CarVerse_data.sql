@@ -207,3 +207,7 @@ INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'F-150', 04, 'Limited', 07, 07, 01, 02, 06, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'F-150', 05, 'Limited', 07, 07, 01, 02, 06, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'F-150', 06, 'Limited', 07, 07, 01, 02, 06, 01);
+/*Ford Transit Connect*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Transit Connect', 03, 'XL Passenger Wagon', 06, 06, 01, 02, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Transit Connect', 03, 'XLT Passenger Wagon', 06, 06, 01, 02, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Transit Connect', 03, 'Titanium Passenger Wagon', 06, 06, 01, 02, 03, 01);
