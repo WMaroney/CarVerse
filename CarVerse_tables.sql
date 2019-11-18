@@ -63,7 +63,7 @@ CREATE TABLE main_car_table(
 	Make_ID int(2) not null,
 	Model_Name varchar(20) not null,
 	Engine_Type_ID int(2) not null,
-	Trim_type varchar (20) not null,
+	Trim_type varchar (50) not null,
 	Body_type_ID int(2) not null,
 	Class_ID int(2) not null,
 	Drivetrain_ID int(2) not null,
