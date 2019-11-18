@@ -83,6 +83,10 @@ INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (04, '25 - 30 MPG');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (05, '30 - 35 MPG');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (06, '35 - 40 MPG');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (07, '>40 MPG');
+INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (08, '>100 MPC');
+INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (09, '>200 MPC');
+INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (10, '>300 MPC');
+INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (11, '>400 MPC');
 
 /*The following lines add to the Warranty Table*/
 INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (01, 'Powertrain', 36, '30,000 Miles');
