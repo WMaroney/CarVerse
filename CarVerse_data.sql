@@ -168,3 +168,13 @@ INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (16, 'WRX', 02, 'Base', 04, 01, 03, 04, 04, 03);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (16, 'WRX', 02, 'Premium', 04, 01, 03, 04, 05, 03);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (16, 'WRX', 02, 'Limited', 04, 01, 03, 04, 05, 03);
+
+/*FORD*/
+/*Ford Fiesta*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'S', 03, 01, 01, 04, 01, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'SE', 03, 01, 01, 04, 01, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'SE Hatch', 04, 01, 01, 04, 01, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'ST-Line', 04, 01, 01, 04, 01, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'ST', 03, 04, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 01, 'S', 03, 01, 01, 04, 01, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 01, 'SE', 03, 01, 01, 04, 01, 01);
