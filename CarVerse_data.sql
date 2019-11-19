@@ -219,3 +219,4 @@ INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (17, 'Model 3', 11, 'Standard', 03, 02, 02, 09, 03, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (17, 'Model 3', 11, 'Long Lange', 03, 02, 03, 10, 04, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (17, 'Model 3', 11, 'Performance', 03, 02, 03, 10, 04, 01);
+
