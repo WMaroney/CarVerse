@@ -95,7 +95,7 @@ INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warrant
 INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (05, 'Powertrain', 90, '100,000 Miles');
 INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (06, 'Bumber-to_bumper', 90, '100,000 Miles');
 
-/*FORD*/
+/*The following lines add cars to the main_car_table.*/
 /*Ford Fiesta*/
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'S', 03, 01, 01, 04, 01, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (08, 'Fiesta', 02, 'SE', 03, 01, 01, 04, 01, 01);
@@ -216,3 +216,117 @@ INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (17, 'Model 3', 11, 'Standard', 03, 02, 02, 09, 03, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (17, 'Model 3', 11, 'Long Lange', 03, 02, 03, 10, 04, 01);
 INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (17, 'Model 3', 11, 'Performance', 03, 02, 03, 10, 04, 01);
+/*Volkwagon Beetle*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (19, 'Beetle', 11, 'S', 02, 01, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (19, 'Beetle', 11, 'Final Edition S', 02, 01, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (19, 'Beetle', 11, 'SE', 02, 01, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (19, 'Beetle', 11, 'Final Edition SE', 02, 01, 01, 04, 02, 01);
+/*Chevy Corvette*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (05, 'Corvette', 05, 'Grand Sport', 01, 05, 02, 03, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (05, 'Corvette', 06, 'Grand Sport', 01, 05, 02, 03, 06, 01);
+/*Cheverolet Volt*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (05, 'Volt', 09, 'LT', 03, 01, 01, 06, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (05, 'Volt', 09, 'Premier', 03, 01, 01, 06, 03, 01);
+/*Mercedes GLA*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (14, 'GLA', 01, '250 SUV', 05, 08, 03, 04, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (14, 'GLA', 01, '250 SUV 4-Matic', 05, 08, 03, 04, 05, 01);
+/*Mercedes S550*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (14, 'S560', 01, 'Sedan', 03, 03, 03, 01, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (14, 'S560', 01, 'Sedan 4-Matic', 03, 03, 03, 01, 06, 01);
+/*Jeep Wrangler*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 03, 'Sport', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 04, 'Sport', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 03, 'Sport S', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 04, 'Sport S', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 03, 'Freedom', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 04, 'Freedom', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 03, 'Sahara', 01, 04, 04, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (12, 'Wrangler', 04, 'Sahara', 01, 04, 04, 02, 03, 03);
+/*Volvo S60*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (20, 'S60', 01, 'T5 FWD Momentum', 03, 02, 01, 04, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (20, 'S60', 01, 'T5 FWD R-Design', 03, 02, 03, 04, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (20, 'S60', 01, 'T6 AWD Momentum', 03, 02, 01, 04, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (20, 'S60', 01, 'T6 AWD R-Design', 03, 02, 03, 04, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (20, 'S60', 01, 'T8 AWD Momentum', 03, 02, 01, 04, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (20, 'S60', 01, 'T8 AWD R-Design', 03, 02, 03, 04, 04, 01);
+/*Toyota Prius*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (18, 'Prius', 09, 'L Eco', 03, 01, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (18, 'Prius', 09, 'LE', 03, 01, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (18, 'Prius', 09, 'XLE', 03, 01, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (18, 'Prius', 09, 'Limited', 03, 01, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (18, 'Prius', 09, 'LE AWD-e', 03, 01, 03, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (18, 'Prius', 09, 'XLE AWD-e', 03, 01, 03, 07, 02, 01);
+/*Acura RDX*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (01, 'RDX', 01, 'FWD', 05, 08, 01, 03, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (01, 'RDX', 01, 'SH-AWD', 05, 08, 03, 03, 03, 01);
+/*Nissan Leaf*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (15, 'Leaf', 01, 'S', 03, 01, 01, 08, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (15, 'Leaf', 01, 'SV', 03, 01, 01, 08, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (15, 'Leaf', 01, 'SL', 03, 01, 01, 08, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (15, 'Leaf', 01, 'S Plus', 03, 01, 01, 08, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (15, 'Leaf', 01, 'SV Plus', 03, 01, 01, 08, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (15, 'Leaf', 01, 'SL Plus', 03, 01, 01, 08, 03, 01);
+/*Mazda 6*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (13, '6', 01, 'Sport', 03, 03, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (13, '6', 01, 'Touring', 03, 03, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (13, '6', 01, 'Grand Touring', 03, 03, 01, 04, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (13, '6', 01, 'Grand Touring Reserve', 03, 03, 01, 04, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (13, '6', 01, 'Signature', 03, 03, 01, 04, 03, 01);
+/*Audi*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (02, 'A3', 01, 'Sport Premium', 03, 03, 01, 05, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (02, 'A3', 01, 'Sport Premium Plus', 03, 03, 01, 05, 03, 01);
+/*BMW 5 Series*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (03, '5 Series', 01, '530i Sedan', 03, 03, 02, 05, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (03, '5 Series', 01, '530i xDrive Sedan', 03, 03, 03, 05, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (03, '5 Series', 03, '540i Sedan', 03, 03, 02, 05, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (03, '5 Series', 03, '540i xDrive Sedan', 03, 03, 03, 05, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (03, '5 Series', 09, '530e Sedan', 03, 03, 02, 07, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (03, '5 Series', 09, '530e xDrive Sedan', 03, 03, 03, 07, 06, 01);
+/*Cadillac Escalade*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Base 2WD', 05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Base 4WD', 05, 04, 03, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Luxury 2WD', 05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Luxury 4WD', 05, 04, 03, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Premium Luxury 2WD', 05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Premium Luxury 4WD', 05, 04, 03, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Platinum 2WD', 05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (04, 'Escalade', 05, 'Platinum 4WD', 05, 04, 03, 02, 06, 01);
+/*Chrysler 300*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (06, '300', 03, 'Touring',    05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (06, '300', 03, 'Touring L',  05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (06, '300', 03, 'S',          05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (06, '300', 03, 'Limited',    05, 04, 01, 02, 06, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (06, '300', 03, 'C', 05, 04, 01, 02, 06, 01);
+/*Dodge RAM 1500*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Tradesman', 07, 07, 02, 02, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Big Horn', 07, 07, 02, 02, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Laramie', 07, 07, 02, 02, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Rebel', 07, 07, 02, 02, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Laramie Longhorn', 07, 07, 02, 02, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Limited', 07, 07, 02, 02, 05, 01);
+
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Tradesman', 07, 07, 02, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Big Horn', 07, 07, 02, 02, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Laramie', 07, 07, 02, 02, 04, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Rebel', 07, 07, 02, 02, 04, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Laramie Longhorn', 07, 07, 02, 02, 05, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (07, 'RAM 1500', 03, 'Limited', 07, 07, 02, 02, 05, 03);
+/*GMC Canyon*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (09, 'Canyon', 03, 'SLE Elevation', 07, 07, 02, 03, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (09, 'Canyon', 03, 'SLE Convenience', 07, 07, 02, 03, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (09, 'Canyon', 03, 'SLE Elevation', 07, 07, 02, 03, 03, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (09, 'Canyon', 03, 'SLE Convenience', 07, 07, 02, 03, 03, 03);
+/*Infinit Q60*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (11, 'Q60', 03, '3.0t Pure',         01, 02, 02, 03, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (11, 'Q60', 03, '3.0t Pure AWD',     01, 02, 02, 03, 03, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (11, 'Q60', 03, '3.0t Luxe',         01, 02, 02, 03, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (11, 'Q60', 03, '3.0t Luxe AWD',     01, 02, 02, 03, 04, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (11, 'Q60', 03, 'Red Sport 400',     01, 02, 02, 03, 05, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (11, 'Q60', 03, 'Red Sport 400 AWD', 01, 02, 02, 03, 05, 01);
+/*Honda Insight*/
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (10, 'Insight', 01, 'LX', 03, 02, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (10, 'Insight', 01, 'EX', 03, 02, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (10, 'Insight', 01, 'sx', 03, 02, 01, 07, 02, 01);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (10, 'Insight', 01, 'LX', 03, 02, 01, 07, 02, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (10, 'Insight', 01, 'EX', 03, 02, 01, 07, 02, 03);
+INSERT INTO main_car_table (Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES (10, 'Insight', 01, 'sx', 03, 02, 01, 07, 02, 03);
