@@ -24,19 +24,17 @@ This database and website is being developed for a graduate level project for da
 - [ ] Search Car
 - [ ] Remove Car pushed to version 2 feature
 
-# File & Folder Organization
-
 ## File & Folder Organization
-  
-## Folders
-  -Templates folder holds html templates
+- File & Folder Organization
+	- Folders
+    - Templates folder holds html templates
 
-## Files
-  -main.py (main program)
-  -CarVerse_tables.sql (SQL tables)
-  -CarVerse_data.sql (Preloaded Car Data)
-  -README.md
-  -requirements.txt
+  - Files
+    -main.py (main program)
+    -CarVerse_tables.sql (SQL tables)
+    -CarVerse_data.sql (Preloaded Car Data)
+    -README.md
+    -requirements.txt
 
 ## To Run the Application
 
