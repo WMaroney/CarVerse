@@ -1,7 +1,6 @@
-INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('Billy', 'admin', 'admin');
-INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('David', 'admin', 'admin');
-INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('Test1', 'password123', 'general');
-INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('Test2', 'password456', 'general');
+INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('root', 'root', 'root');
+INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('Billy@email.com', 'admin', 'root');
+INSERT INTO user_table (User_Name, Password, User_Type) VALUES ('David@email.com', 'admin', 'root');
 
 /*The following lines add to the Make Table*/
 INSERT INTO make_table (Make_ID, Make_Name) VALUES (01, 'Acura');
