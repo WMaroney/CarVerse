@@ -1,7 +1,7 @@
-CarVerse--
+# CarVerse--
 A automobile based database developed for CSC 550 Database Systems
 
-Requirements
+## Requirements
 
 Python3
 Flask
@@ -10,18 +10,21 @@ Flask WTF
 pymySQL
 SQLite
 
-Description
+## Description
 
 This database and website is being developed for a graduate level project for database systems CSC 540. The database has automobiles preloaded in and would allow a user to search and add cars to the database.
 
-Where are we in development?
+## Where are we in development?
 
- Hosted
- Able to login
- Able to sign up
- Display cars on Index
+- [x] Hosted
+- [x] Able to login
+- [x] Able to sign up
+- [x] Display cars on Index
+- [ ] Add Car
+- [ ] Search Car
+- [ ] Remove Car pushed to version 2 feature
 
-File & Folder Organization
+## File & Folder Organization
 
 File & Folder Organization
 Folders
