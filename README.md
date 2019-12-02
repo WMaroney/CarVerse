@@ -27,14 +27,13 @@ This database and website is being developed for a graduate level project for da
 ## File & Folder Organization
 - File & Folder Organization
 	- Folders
-    - Templates folder holds html templates
-
-  - Files
-    -main.py (main program)
-    -CarVerse_tables.sql (SQL tables)
-    -CarVerse_data.sql (Preloaded Car Data)
-    -README.md
-    -requirements.txt
+		- Templates folder holds html templates
+	- Files
+		- main.py (main program)
+		- CarVerse_tables.sql (SQL script to build database and tables)
+		- CarVerse_data.sql (SQL script to preload data into database)
+		- README.md
+		- rqs.txt (requirements)
 
 ## To Run the Application
 
