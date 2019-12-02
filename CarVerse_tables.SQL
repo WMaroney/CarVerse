@@ -2,10 +2,11 @@ CREATE DATABASE CarVerse;
 USE CarVerse;
 
 CREATE TABLE user_table(
+	user_id integer auto_increment,
 	User_Name varchar(50) not null,
 	Password varchar(30) not null,
 	User_Type varchar(10) not null,
-	primary key (User_Name)
+	primary key (user_id)
 	);
 
 CREATE TABLE make_table(
@@ -60,6 +61,7 @@ CREATE TABLE warranty_table(
 	);
 
 CREATE TABLE main_car_table(
+	car_id integer auto_increment,
 	Make_ID int(2) not null,
 	Model_Name varchar(20) not null,
 	Engine_Type_ID int(2) not null,
@@ -70,7 +72,7 @@ CREATE TABLE main_car_table(
 	MPG_range_ID int(2) not null,
 	MSRP_ID int(2) not null,
 	Warranty_ID int(2) not null,
-	primary key (Model_Name, Engine_Type_ID, Trim_type, Warranty_ID),
+	primary key (car_id),
 	foreign key (Make_ID) references make_table(Make_ID),
 	foreign key (Engine_Type_ID) references engine_type(Engine_Type_ID),
 	foreign key (Body_type_ID) references body_table(Body_type_ID),
