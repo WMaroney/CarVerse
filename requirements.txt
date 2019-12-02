@@ -16,7 +16,6 @@ oauthlib==3.1.0
 opencv-python==4.1.0.25
 opencv-python-headless==4.1.0.25
 panda==0.3.1
-Pillow==6.1.0
 pyasn1==0.4.6
 pyasn1-modules==0.2.6
 pycairo==1.18.1
