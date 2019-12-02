@@ -36,7 +36,7 @@ CarVerse_data.sql (Preloaded Car Data)
 README.md
 rqs.txt (requirements)
 
-To Run the Application
+## To Run the Application
 
 Clone or download repo to desktop
 Open terminal and navigate to CarVerse Folder
