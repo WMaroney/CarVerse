@@ -26,12 +26,12 @@ This database and website is being developed for a graduate level project for da
 
 ## File & Folder Organization
 
--File & Folder Organization
+# -File & Folder Organization
   
-  -Folders
-     -Templates folder holds html templates
+#   -Folders
+    -Templates folder holds html templates
 
-  -Files
+#   -Files
     -main.py (main program)
     -CarVerse_tables.sql (SQL tables)
     -CarVerse_data.sql (Preloaded Car Data)
