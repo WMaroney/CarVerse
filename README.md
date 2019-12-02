@@ -1,4 +1,4 @@
-CarVerse
+CarVerse--
 A automobile based database developed for CSC 550 Database Systems
 
 Requirements
