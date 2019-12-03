@@ -1,7 +1,6 @@
 cachetools==3.1.1
 certifi==2019.6.16
 chardet==3.0.4
-email==4.0.2
 google-api-python-client==1.7.11
 google-auth==1.6.3
 google-auth-httplib2==0.0.3
@@ -18,7 +17,6 @@ opencv-python-headless==4.1.0.25
 panda==0.3.1
 pyasn1==0.4.6
 pyasn1-modules==0.2.6
-pycairo==1.18.1
 pyDes==2.0.1
 PyMySQL==0.9.3
 pynotify==0.1.1
