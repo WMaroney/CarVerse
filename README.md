@@ -37,8 +37,8 @@ This database and website is being developed for a graduate level project for da
 
 ## To Run the Application
 
-Clone or download repo to desktop
-Open terminal and navigate to CarVerse Folder
-Install requirements.txt from the terminal "pip3 install -r requirements.txt"
-Run "python3 main.py" in the terminal
-Open Firefox/Chrome or any other internet Browser and Input "http://localhost:8080" to view the web application
+- Clone or download repo to desktop
+- Open terminal and navigate to CarVerse Folder
+- Install requirements.txt from the terminal "pip3 install -r requirements.txt"
+- Run "python3 main.py" in the terminal
+- Open Firefox/Chrome or any other internet Browser and Input "http://localhost:8080" to view the web application
