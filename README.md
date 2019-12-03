@@ -1,5 +1,5 @@
 # CarVerse--
-A automobile based database developed for CSC 550 Database Systems
+A automobile based database developed for CSC 540 Database Systems
 
 ## Requirements
 
