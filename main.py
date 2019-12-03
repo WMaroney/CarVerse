@@ -26,6 +26,8 @@ import re
 db = pymysql.connect(host='localhost', user='root', password='root', db='carverse')
 c = db.cursor()
 
+# execute scripts from file function
+
 def executeScriptsFromFile(filename):
 	fd = open(filename, 'r')
 	sqlFile = fd.read()
@@ -45,8 +47,6 @@ def executeScriptsFromFile(filename):
 #executeScriptsFromFile('/Users/williamm1978/Desktop/Car-Verse/sql/CarVerse_tables.sql')
 #executeScriptsFromFile('/Users/williamm1978/Desktop/Car-Verse/sql/CarVerse_data.sql')
 
-
-
 ## FLASK FORMS subclassed from FlaskForm
 
 
@@ -63,21 +63,22 @@ class SignupForm(FlaskForm):
 	submit = SubmitField('Sign Up')
 
 class AddCarForm(FlaskForm):
-	Make_ID = SelectField('Automobile Manufacturer', choices= [], coerce=int)
+	make_choices = [('Make Name'), (c.execute('SELECT Make_Name FROM make_table'))]
+	Make_Name = SelectField('Automobile Manufacturer',choices= [make_choices])
 	Model_Name = StringField('Model Name', validators=[DataRequired()])
-	Engine_Type_ID = SelectField('Engine Type', choices= [], coerce=int)
+	Engine_Type = SelectField('Engine Type', choices= [], coerce=int)
 	Trim_type = StringField('Model Trim Name', validators=[DataRequired()])
-	Body_type_ID =  SelectField('Body Type', choices= [], coerce=int)
-	Class_ID = SelectField('Class Type', choices= [], coerce=int)
-	Drivetrain_ID = SelectField('Drivetrain Type', choices= [], coerce=int)
-	MPG_range_ID = SelectField('MPG Range', choices= [], coerce=int)
-	MSRP_ID = SelectField('MSRP Range', choices= [], coerce=int)
-	Warranty_ID = SelectField('Warranty', choices= [], coerce=int)
+	Body_type =  SelectField('Body Type', choices= [], coerce=int)
+	Primary_Class = SelectField('Class Type', choices= [], coerce=int)
+	Drivetrain_type = SelectField('Drivetrain Type', choices= [], coerce=int)
+	MPG_range = SelectField('MPG Range', choices= [], coerce=int)
+	MSRP_range = SelectField('MSRP Range', choices= [], coerce=int)
+	Warranty_type = SelectField('Warranty', choices= [], coerce=int)
 	submit =  SubmitField('Submit: ')
 
 class ViewCarsForm(FlaskForm):
-	car_id = SelectField('Current Automobiles', choices= [],coerce=int)
-
+	car_id = SelectField('Current Model', choices= [],coerce=int)
+	submit =  SubmitField('Search Cars')
 
 ## User & Automobile classes
 
@@ -89,18 +90,18 @@ class User(UserMixin):
 
 
 class Automobile():
-	def __init__(self, car_id, Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID):
+	def __init__(self, car_id, Make_Name, Model_Name, Engine_Type, Trim_type, Body_type, Primary_Class, Drivetrain_type, MPG_range, MSRP_range, Warranty_type):
 		self.id = car_id
-		self.Make_ID = Make_ID
+		self.Make_Name = Make_Name
 		self.Model_Name = Model_Name
-		self.Engine_Type_ID = Engine_Type_ID
+		self.Engine_Type = Engine_Type
 		self.Trim_type = Trim_type
-		self.Body_type_ID = Body_type_ID
-		self.Class_ID = Class_ID
-		self.Drivetrain_ID = Drivetrain_ID
-		self.MPG_range_ID = MPG_range_ID
-		self.MSRP_ID = MSRP_ID
-		self.Warranty_ID = Warranty_ID
+		self.Body_type = Body_type
+		self.Primary_Class = Primary_Class
+		self.Drivetrain_type = Drivetrain_type
+		self.MPG_range = MPG_range
+		self.MSRP_range = MSRP_range
+		self.Warranty_type = Warranty_type
 
 
 
@@ -131,7 +132,7 @@ def load_cars():
 	c.execute("SELECT * from main_car_table")
 	cars = c.fetchall()
 	for car in cars:
-		car_db[str(car[0])] = Automobile(car[0],car[1],car[2],car[3],car[4],car[5],car[6],car[7],car[8],car[9], car[10])		
+		car_db[str(car[0])] = Automobile(car[0],car[1],car[2],car[3],car[4],car[5],car[6],car[7],car[8],car[9],car[10])		
 
 
 # Initialize User and Car Databases
@@ -174,6 +175,7 @@ def index():
 	c.execute('SELECT car_id, Model_Name from main_car_table'.format(car_db))
 	cars=c.fetchall()
 	form.car_id.choices = cars
+	#form.Trim_type.data = cars
 	return render_template ('index.html', form=form, cars=car_db.values())
 
 # Login Route
@@ -228,10 +230,10 @@ def addcar():
 	load_cars()
 	db = pymysql.connect(host='localhost', user='root', password='root', db='carverse')
 	c = db.cursor()
-	c.execute ('SELECT car_id FROM main_car_table'.format(car_db))
-	car_id = c.fetchall()
-	form.Model_Name.choices = car_id
+	c.execute ('SELECT * FROM main_car_table'.format(car_db))
+	cars = c.fetchall()
 	if form.validate_on_submit():
+		
 		Make_ID = form.Make_ID.data
 		Model_Name = form.Model_Name.data
 		Engine_Type_ID = form.Engine_Type_ID.data
