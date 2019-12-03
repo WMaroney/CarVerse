@@ -3,12 +3,12 @@ A automobile based database developed for CSC 540 Database Systems
 
 ## Requirements
 
--Python3
--Flask
--Flask Forms
--Flask WTF
--pymySQL
--SQLite
+- Python3
+- Flask
+- Flask Forms
+- Flask WTF
+- pymySQL
+- SQLite
 
 ## Description
 
