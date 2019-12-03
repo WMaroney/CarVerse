@@ -24,7 +24,7 @@ CREATE TABLE class_type(
 CREATE TABLE engine_type(
 	Engine_Type_ID int(2) not null,
 	Engine_Type varchar(30) not null,
-	Transmittion_Type varchar(20) not null,
+	Transmission_Type varchar(20) not null,
 	primary key (Engine_Type_ID)
 	);
 
