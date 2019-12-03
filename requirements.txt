@@ -20,7 +20,6 @@ pyasn1-modules==0.2.6
 pyDes==2.0.1
 PyMySQL==0.9.3
 pynotify==0.1.1
-pytesseract==0.2.7
 python-oauth2==1.1.1
 requests==2.22.0
 requests-oauthlib==1.2.0
