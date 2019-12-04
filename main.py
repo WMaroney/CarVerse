@@ -120,16 +120,16 @@ class AddCarForm(FlaskForm):
 	warranty_choices = choose
 	
 	
-	Make_Name = SelectField('Automobile Manufacturer',choices= make_choices)
+	Make_Name = SelectField('Automobile Manufacturer',choices= make_choices, coerce=int)
 	Model_Name = StringField('Model Name', validators=[DataRequired()])
-	Engine_Type = SelectField('Engine Type', choices= engine_choices)
+	Engine_Type = SelectField('Engine Type', choices= engine_choices, coerce=int)
 	Trim_type = StringField('Model Trim Name', validators=[DataRequired()])
-	Body_type =  SelectField('Body Type', choices= body_choices)
-	Primary_Class = SelectField('Class Type', choices= class_choices)
-	Drivetrain_type = SelectField('Drivetrain Type', choices= drive_choices)
-	MPG_range = SelectField('MPG Range', choices= mileage_choices)
-	MSRP_range = SelectField('MSRP Range', choices= price_choices)
-	Warranty_type = SelectField('Warranty', choices= warranty_choices)
+	Body_type =  SelectField('Body Type', choices= body_choices, coerce=int)
+	Primary_Class = SelectField('Class Type', choices= class_choices, coerce=int)
+	Drivetrain_type = SelectField('Drivetrain Type', choices= drive_choices, coerce=int)
+	MPG_range = SelectField('MPG Range', choices= mileage_choices, coerce=int)
+	MSRP_range = SelectField('MSRP Range', choices= price_choices, coerce=int)
+	Warranty_type = SelectField('Warranty', choices= warranty_choices, coerce=int)
 	submit =  SubmitField('Submit: ')
 
 class ViewCarsForm(FlaskForm):
@@ -308,9 +308,8 @@ def addcar():
 		MSRP_range = form.MSRP_range.data
 		Warranty_type = form.Warranty_type.data
 		
-		#sql = ('INSERT INTO main_car_table (car_id, Make_Name, Model_Name, Engine_Type, Trim_type, Body_type, Primary_Class, Drivetrain_type, MPG_range, MSRP_range, Warranty_type) VALUES ({},{},"{}",{},"{}",{},{},{},{},{},{},{})'.format(0, 0, Model_Name, 0, Trim_type, 0, 0, 0, 0, 0, 0, 0))
-		sql = ('INSERT INTO main_car_table (car_id, Make_Name, Trim_type) VALUES ({}, "{}", "{}")'.format(0, Model_Name, Trim_type))
-		print(sql)
+		sql = ('INSERT INTO main_car_table (car_id, Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES ({},{},"{}",{},"{}",{},{},{},{},{},{})'.format(0,Make_Name,Model_Name,Engine_Type,Trim_type,Body_type,Primary_Class,Drivetrain_type,MPG_range,MSRP_range,Warranty_type))
+		#print(sql)
 		c.execute (sql)
 		db.commit()
 		load_cars()
