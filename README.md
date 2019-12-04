@@ -20,9 +20,11 @@ This database and website is being developed for a graduate level project for da
 - [x] Able to login
 - [x] Able to sign up
 - [x] Display cars on Index
-- [ ] Add Car
-- [ ] Search Car
+- [x] Add Car
+- [x] Search Car
 - [ ] Remove Car pushed to version 2 feature
+- [ ] Display Car data on Search not ID's
+- [ ] More robust search parameters allowing user to search by brand or other criteria
 
 ## File & Folder Organization
 - File & Folder Organization
