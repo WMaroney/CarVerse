@@ -63,17 +63,73 @@ class SignupForm(FlaskForm):
 	submit = SubmitField('Sign Up')
 
 class AddCarForm(FlaskForm):
-	make_choices = [('Make Name'), (c.execute('SELECT Make_Name FROM make_table'))]
-	Make_Name = SelectField('Automobile Manufacturer',choices= [make_choices])
+	c.execute('SELECT Make_ID, Make_Name FROM make_table')
+	makeChoice = c.fetchall()
+	choose = []
+	for i in makeChoice:
+		choose.append(i)
+	make_choices = choose
+	
+	c.execute('SELECT Engine_Type_ID, Engine_Type FROM engine_type')
+	engineChoice = c.fetchall()
+	choose = []
+	for i in engineChoice:
+		choose.append(i)
+	engine_choices = choose
+	
+	c.execute('SELECT Body_type_ID, Body_type FROM body_table')
+	bodyChoice = c.fetchall()
+	choose = []
+	for i in bodyChoice:
+		choose.append(i)
+	body_choices = choose
+	
+	c.execute('SELECT Class_ID, Primary_Class FROM class_type')
+	classChoice = c.fetchall()
+	choose = []
+	for i in classChoice:
+		choose.append(i)
+	class_choices = choose
+	
+	c.execute('SELECT Drivetrain_ID, Drivetrain_type FROM drivetrain_table')
+	driveChoice = c.fetchall()
+	choose = []
+	for i in driveChoice:
+		choose.append(i)
+	drive_choices = choose
+	
+	c.execute('SELECT MPG_range_ID, MPG_range FROM mpg_table')
+	mpgChoice = c.fetchall()
+	choose = []
+	for i in mpgChoice:
+		choose.append(i)
+	mileage_choices = choose
+	
+	c.execute('SELECT MSRP_ID, MSRP_range FROM msrp_table')
+	priceChoice = c.fetchall()
+	choose = []
+	for i in priceChoice:
+		choose.append(i)
+	price_choices = choose
+	
+	c.execute('SELECT Warranty_ID, Warranty_type FROM warranty_table')
+	warranChoice = c.fetchall()
+	choose = []
+	for i in warranChoice:
+		choose.append(i)
+	warranty_choices = choose
+	
+	
+	Make_Name = SelectField('Automobile Manufacturer',choices= make_choices)
 	Model_Name = StringField('Model Name', validators=[DataRequired()])
-	Engine_Type = SelectField('Engine Type', choices= [], coerce=int)
+	Engine_Type = SelectField('Engine Type', choices= engine_choices)
 	Trim_type = StringField('Model Trim Name', validators=[DataRequired()])
-	Body_type =  SelectField('Body Type', choices= [], coerce=int)
-	Primary_Class = SelectField('Class Type', choices= [], coerce=int)
-	Drivetrain_type = SelectField('Drivetrain Type', choices= [], coerce=int)
-	MPG_range = SelectField('MPG Range', choices= [], coerce=int)
-	MSRP_range = SelectField('MSRP Range', choices= [], coerce=int)
-	Warranty_type = SelectField('Warranty', choices= [], coerce=int)
+	Body_type =  SelectField('Body Type', choices= body_choices)
+	Primary_Class = SelectField('Class Type', choices= class_choices)
+	Drivetrain_type = SelectField('Drivetrain Type', choices= drive_choices)
+	MPG_range = SelectField('MPG Range', choices= mileage_choices)
+	MSRP_range = SelectField('MSRP Range', choices= price_choices)
+	Warranty_type = SelectField('Warranty', choices= warranty_choices)
 	submit =  SubmitField('Submit: ')
 
 class ViewCarsForm(FlaskForm):
@@ -172,11 +228,18 @@ def index():
 	load_cars()
 	db = pymysql.connect(host='localhost', user='root', password='root', db='carverse')
 	c = db.cursor()
-	c.execute('SELECT car_id, Model_Name from main_car_table'.format(car_db))
+	c.execute('SELECT car_id, Model_Name,Trim_type from main_car_table'.format(car_db))
 	cars=c.fetchall()
-	form.car_id.choices = cars
+	newTupe = []
+	for i in cars:
+		newTupe.append((i[0], i[1]+": "+i[2]))
+	form.car_id.choices = newTupe
+	if form.validate_on_submit():
+		c.execute("SELECT * FROM main_car_table WHERE car_id={}".format(form.car_id.data))
+		carData = c.fetchall()
+		return render_template ('index.html', form=form, carData = carData)
 	#form.Trim_type.data = cars
-	return render_template ('index.html', form=form, cars=car_db.values())
+	return render_template ('index.html', form=form)
 
 # Login Route
 @app.route('/login', methods=['GET', 'POST'])
@@ -224,7 +287,7 @@ def signup():
 
 # Add a Car Route
 @app.route('/addcar', methods=['GET', 'POST'])
-@login_required
+# @login_required
 def addcar():
 	form = AddCarForm()
 	load_cars()
@@ -234,18 +297,20 @@ def addcar():
 	cars = c.fetchall()
 	if form.validate_on_submit():
 		
-		Make_ID = form.Make_ID.data
+		Make_Name = form.Make_Name.data
 		Model_Name = form.Model_Name.data
-		Engine_Type_ID = form.Engine_Type_ID.data
+		Engine_Type = form.Engine_Type.data
 		Trim_type = form.Trim_type.data
-		Body_type_ID = form.Body_type_ID.data
-		Class_ID = form.Class_ID.data
-		Drivetrain_ID = form.Drivetrain_ID.data
-		MPG_range_ID = form.MPG_range_ID.data
-		MSRP_ID = form.MSRP_ID.data
-		Warranty_ID = form.Warranty_ID.data
+		Body_type = form.Body_type.data
+		Primary_Class = form.Primary_Class.data
+		Drivetrain_type = form.Drivetrain_type.data
+		MPG_range = form.MPG_range.data
+		MSRP_range = form.MSRP_range.data
+		Warranty_type = form.Warranty_type.data
 		
-		sql = ('INSERT INTO main_car_table (car_id, Make_ID, Model_Name, Engine_Type_ID, Trim_type, Body_type_ID, Class_ID, Drivetrain_ID, MPG_range_ID, MSRP_ID, Warranty_ID) VALUES ({},{},"{}",{},"{}",{},{},{},{},{},{},{})'.format(0, 0, Model_Name, 0, Trim_type, 0, 0, 0, 0, 0, 0, 0))
+		#sql = ('INSERT INTO main_car_table (car_id, Make_Name, Model_Name, Engine_Type, Trim_type, Body_type, Primary_Class, Drivetrain_type, MPG_range, MSRP_range, Warranty_type) VALUES ({},{},"{}",{},"{}",{},{},{},{},{},{},{})'.format(0, 0, Model_Name, 0, Trim_type, 0, 0, 0, 0, 0, 0, 0))
+		sql = ('INSERT INTO main_car_table (car_id, Make_Name, Trim_type) VALUES ({}, "{}", "{}")'.format(0, Model_Name, Trim_type))
+		print(sql)
 		c.execute (sql)
 		db.commit()
 		load_cars()
