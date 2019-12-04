@@ -6,7 +6,48 @@
 {% block page_content %}
 <div class="page-header">
 	<h1>Hello, {% if current_user.is_authenticated %}{{ current_user.id }}{% else %}Stranger{% endif %}!</h1>
+
 </div>
 {{ wtf.quick_form(form) }}
+
+<div style="margin-top:50px">
+	{% if carData %}
+	<table class="table table-bordered table-responsive">
+		<thead>
+			<tr>
+				<th>Car ID</th>
+				<th>Make Name</th>
+				<th>Model Name</th>
+				<th>Engine Type</th>
+				<th>Trim Type</th>
+				<th>Body Type</th>
+				<th>Primary Class</th>
+				<th>Drive Train</th>
+				<th>MPG</th>
+				<th>MSRP</th>
+				<th>Warranty</th>
+			</tr>
+		</thead>
+		<tbody>
+	{% for car in carData %}
+			<tr>
+				<td>{{car[0]}}</td>
+				<td>{{car[1]}}</td>
+				<td>{{car[2]}}</td>
+				<td>{{car[3]}}</td>
+				<td>{{car[4]}}</td>
+				<td>{{car[5]}}</td>
+				<td>{{car[6]}}</td>
+				<td>{{car[7]}}</td>
+				<td>{{car[8]}}</td>
+				<td>{{car[9]}}</td>
+				<td>{{car[10]}}</td>
+			</tr>
+
+	{% endfor %}
+	</tbody>
+	</table>
+	{% endif %}
+</div>
 
 {% endblock %}
