@@ -283,7 +283,7 @@ def signup():
 			flash('Invalid User Name or Password', category='error')
 			return redirect(url_for('index'))
 
-	return render_template('signUP.html', title='Sign Up', form=form)
+	return render_template('signup.html', title='Sign Up', form=form)
 
 # Add a Car Route
 @app.route('/addcar', methods=['GET', 'POST'])
