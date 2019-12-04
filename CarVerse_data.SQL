@@ -35,20 +35,20 @@ INSERT INTO class_type (Class_ID, Primary_Class) VALUES (07, 'Truck');
 INSERT INTO class_type (Class_ID, Primary_Class) VALUES (08, 'Luxury');
 
 /*The following lines add to the Engine Type Table*/
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (01, '4-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (02, '4-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (03, '6-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (04, '6-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (05, '8-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (06, '8-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (07, '12-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (08, '12-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (09, 'Hybrid', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (10, 'Hybrid', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (11, 'Full Electric', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (12, 'Full Electric', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (13, 'Other', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (14, 'Other', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (01, '4-Cylinder-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (02, '4-Cylinder-M', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (03, '6-Cylinder-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (04, '6-Cylinder-M', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (05, '8-Cylinder-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (06, '8-Cylinder-M', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (07, '12-Cylinder-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (08, '12-Cylinder-M', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (09, 'Hybrid-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (10, 'Hybrid-M', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (11, 'Full Electric-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (12, 'Full Electric-M', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (13, 'Other-A', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (14, 'Other-M', 'Manual');
 
 /*The following lines add to the Drivetrain Type Table*/
 INSERT INTO drivetrain_table (Drivetrain_ID, Drivetrain_type) VALUES (01, 'Front Wheel Drive');
@@ -87,12 +87,12 @@ INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (10, '>300 MPC');
 INSERT INTO mpg_table (MPG_range_ID, MPG_range) VALUES (11, '>400 MPC');
 
 /*The following lines add to the Warranty Table*/
-INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (01, 'Powertrain', 36, '30,000 Miles');
-INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (02, 'Bumber-to_bumper', 36, '30,000 Miles');
-INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (03, 'Powertrain', 60, '60,000 Miles');
-INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (04, 'Bumber-to_bumper', 60, '60,000 Miles');
-INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (05, 'Powertrain', 90, '100,000 Miles');
-INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (06, 'Bumber-to_bumper', 90, '100,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (01, 'Powertrain-36', 36, '36,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (02, 'Bumber-to_bumper-36', 36, '36,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (03, 'Powertrain-60', 60, '60,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (04, 'Bumber-to_bumper-60', 60, '60,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (05, 'Powertrain-90', 90, '100,000 Miles');
+INSERT INTO warranty_table (Warranty_ID, Warranty_type, Warranty_months, Warranty_miles) VALUES (06, 'Bumber-to_bumper-90', 90, '100,000 Miles');
 
 /*The following lines add cars to the main_car_table.*/
 /*Ford Fiesta*/
