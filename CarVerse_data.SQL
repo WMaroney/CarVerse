@@ -35,20 +35,20 @@ INSERT INTO class_type (Class_ID, Primary_Class) VALUES (07, 'Truck');
 INSERT INTO class_type (Class_ID, Primary_Class) VALUES (08, 'Luxury');
 
 /*The following lines add to the Engine Type Table*/
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (01, '4-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (02, '4-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (03, '6-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (04, '6-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (05, '8-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (06, '8-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (07, '12-Cylinder', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (08, '12-Cylinder', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (09, 'Hybrid', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (10, 'Hybrid', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (11, 'Full Electric', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (12, 'Full Electric', 'Manual');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (13, 'Other', 'Automatic');
-INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmittion_Type) VALUES (14, 'Other', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (01, '4-Cylinder', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (02, '4-Cylinder', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (03, '6-Cylinder', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (04, '6-Cylinder', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (05, '8-Cylinder', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (06, '8-Cylinder', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (07, '12-Cylinder', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (08, '12-Cylinder', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (09, 'Hybrid', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (10, 'Hybrid', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (11, 'Full Electric', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (12, 'Full Electric', 'Manual');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (13, 'Other', 'Automatic');
+INSERT INTO engine_type (Engine_Type_ID, Engine_Type, Transmission_Type) VALUES (14, 'Other', 'Manual');
 
 /*The following lines add to the Drivetrain Type Table*/
 INSERT INTO drivetrain_table (Drivetrain_ID, Drivetrain_type) VALUES (01, 'Front Wheel Drive');
