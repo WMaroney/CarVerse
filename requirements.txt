@@ -33,7 +33,7 @@ pynotify==0.1.1
 python-oauth2==1.1.1
 requests==2.22.0
 requests-oauthlib==1.2.0
-rsa==4.0
+rsa==4.1
 six==1.12.0
 uritemplate==3.0.0
 uritemplate.py==3.0.2
